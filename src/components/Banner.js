@@ -1,7 +1,6 @@
 import Box from '@mui/material/Box';
-import Typography from "@mui/material/Typography";
 
-export const Banner = () =>{
+export const Banner = (props) =>{
     return (
         <Box
       sx={{
@@ -13,8 +12,8 @@ export const Banner = () =>{
         },
       }}
     >
-        <h1>Word Counter</h1>
-        <h2>Paste or type your text here</h2>
+        <h1 className='title'>{props.title}</h1>
+        <h2 className='subtitle'>{props.subtitle}</h2>
     </Box>
      
     )

@@ -7,7 +7,7 @@ export const App = () =>{
     return (
         <Container sx={{textAlign: "center",
                         display: "flex", flexDirection: "column", justifyContent: "center"}} >
-            <Banner />
+            <Banner title="Word Counter" subtitle="Paste or type your text in the box below"/>
             <WordCounter />
         </Container>
     )
