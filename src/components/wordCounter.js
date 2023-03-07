@@ -7,7 +7,7 @@ export const WordCounter = () =>{
 
     const updateWordCount = (event) => {
         const textValue = event.target.value
-        const textArray = textValue.split(' ').map(word => word);
+        const textArray = textValue.split(' ').filter(word => word);
         
         setCountWord(textArray.length)
         
